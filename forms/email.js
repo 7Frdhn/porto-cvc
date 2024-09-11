@@ -3,8 +3,7 @@ const contactForm = document.getElementById('contact-form'),
 
 const sendEmail = (e) => {
     e.preventDefault()
-
-    emailjs.sendForm('service_gn9mkqo', 'template_64dpvlh', '#contact-form', 'mmaR7bmmUfIcVN2Z7')
+    emailjs.sendForm('service_gn9mkqo', 'template_64dpvlh', contactForm, 'mmaR7bmmUfIcVN2Z7')
     .then(() => {
         // Tampilkan pesan berhasil
         contactMessage.textContent = 'Pesan Berhasil Di Kirim✅'
